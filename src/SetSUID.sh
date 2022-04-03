@@ -1,6 +1,6 @@
 #!/bin/sh
 
 set -e
-
-chown 0:0 ChangeTime
-chmod 4755 ChangeTime
+BASEDIR=$(dirname $0)
+chown 0:0 ${BASEDIR}/ChangeTime
+chmod 4755 ${BASEDIR}/ChangeTime
